@@ -1,0 +1,510 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    width: 34% ;
+    height: 50vh;
+    background-color:  hsl(0, 0%, 100%) ;
+    margin-bottom: 15vb;
+    object-fit: cover;
+    font-size: 14px;
+    font-family: "Montserrat, serif";
+    
+}
+
+
+
+.main .ig img{
+    width: 100%;
+    height: 50vh;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+    
+}
+.main .ig .mob{
+    display:none;
+}
+.main .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.main .info .perf{
+    letter-spacing: 5px;
+    font-size: 10px;
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat", sans-serif;
+}
+
+.main .info h1{
+    line-height: 1.9rem;
+    font-weight: bold;
+    font-family: "Fraunces", serif;
+}
+
+.main .info .flo{
+    font-size: 15px ;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.main .info .green{
+    color: hsl(158, 36%, 37%);
+    font-weight: bold;
+    font-size: 35px;
+    
+}
+
+.main .info .strike{
+    text-decoration: line-through;
+    font-size: 15px;
+    color :hsl(228, 12%, 48%);
+    
+}
+
+.main .info .price{
+    text-align: center;
+    font-family: "Fraunces", serif;
+}
+.main button{
+    background-color: hsl(158, 36%, 37%);
+    padding: 10px;
+    color:white;
+    border-radius: 10px;
+    border-color: transparent;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main button:hover{
+    background-color: hsl(159, 71%, 15%);
+    transition: 0.5s ease ;
+}
+.main button img{
+    margin-right: 10px;
+    height: 12px;
+}
+
+
+@media screen and (max-width: 1015px) {
+    .main .info .perf{
+        font-size: 8px;
+    }
+    .main .info h1{
+        font-size: 20px;
+        line-height: 1.2rem;
+    }
+    .main .info .flo{
+        font-size: 10px;
+        line-height: 1rem;
+    }
+    .main .info .green{
+        font-size: 20px;
+    }
+    .main .info .strike{
+        font-size: 10px;
+    }
+    .main button{
+        width:120px;
+    }
+    .main button .p{
+        font-size: 10px;
+    }
+  }
+
+  @media screen and (max-width: 769px){
+    .main{
+        flex-direction: column;
+        width:50%;
+        background-color: hsl(0, 0%, 100%);
+        height: 500vh;
+        
+    }
+    .main .info{
+        justify-content: space-between;
+        margin: 10px;
+
+    }
+    .main .info .perf{
+        letter-spacing: 5px;
+        font-size: 1.5vw;
+        color: hsl(228, 12%, 48%);
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .main .info h1{
+        line-height: 2rem;
+        font-weight: bold;
+        font-size: 4vw;
+        width: 80%;
+        margin-bottom: 15px;
+    }
+    
+    .main .ig .desk{
+        display: none;
+    }
+    .main .ig .mob{
+        display: block;
+        height: 40vh;
+    }
+    .main .info .flo{
+        font-size: 2.4vw ;
+        color: hsl(228, 12%, 48%);
+        line-height: 1.5rem;
+        margin-bottom: 15px;
+        
+    }
+    br{
+        display: none;
+    }
+    .main .info .flo{
+        width: 70%;
+    }
+
+    .main button{
+        background-color: hsl(158, 36%, 37%);
+        padding: 20px;
+        color:white;
+        border-radius: 10px;
+        border-color: transparent;
+        width: 40vw;
+        text-align: center;
+        justify-content: center;
+        height: 40px;
+    
+    }
+    .main button p{
+        font-size: 2vw;
+    }
+    .main .info .green{
+        color: hsl(158, 36%, 37%);
+        font-weight: bold;
+        font-size: 4vw;
+        
+    }
+    .main .info .price{
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    
+    .main .info .strike{
+        text-decoration: line-through;
+        font-size: 1.5vw;
+        color :hsl(228, 12%, 48%);
+        
+    }
+    @media screen and (max-width: 640px){
+        .main{
+            flex-direction: column;
+            width:85%;
+            background-color: hsl(0, 0%, 100%);
+            height: 500vh;
+            margin-top: 200px;
+        }
+        .main .ig .mob{
+            height: 40vh;
+            border-bottom-left-radius: 0px ;
+             border-top-right-radius: 10px; 
+        }
+        .main .info .perf{
+            letter-spacing: 5px;
+            font-size: 4vw;
+            color: hsl(228, 12%, 48%);
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+         .main .info h1{
+            line-height: 2.5rem;
+            font-weight: bold;
+            font-size: 6vw;
+            width: 70%;
+            margin-bottom: 15px;
+        }
+        .main .info .flo{
+            font-size: 4vw ;
+            color: hsl(228, 12%, 48%);
+            line-height: 2rem;
+            margin-bottom: 15px;
+            
+        }
+        .main .info .flo{
+            width: 85%;
+        }
+        .main .info .green{
+            color: hsl(158, 36%, 37%);
+            font-weight: bold;
+            font-size: 7vw;
+            
+        }
+        .main .info .strike{
+            text-decoration: line-through;
+            font-size: 4vw;
+            color :hsl(228, 12%, 48%);
+            
+        }
+        .main .info .price{
+            margin-bottom: 15px;
+            text-align: left;
+            margin-left: 5px;
+        }
+        .main button{
+            background-color: hsl(158, 36%, 37%);
+            padding: 20px;
+            color:white;
+            border-radius: 10px;
+            border-color: transparent;
+            width: 75vw;
+            text-align: center;
+            justify-content: center;
+            height: 40px;
+        
+        }
+        .main button p{
+            font-size: 4vw;
+        }
+      }
+    
+
+  }
+
+  @media screen and (max-width: 439px){
+    .main{
+        flex-direction: column;
+        width:85%;
+        background-color: hsl(0, 0%, 100%);
+        height: 500vh;
+        margin-top: 200px;
+    }
+    .main .ig .mob{
+        height: 40vh;
+        border-bottom-left-radius: 0px ;
+         border-top-right-radius: 10px; 
+    }
+    .main .info .perf{
+        letter-spacing: 5px;
+        font-size: 4vw;
+        color: hsl(228, 12%, 48%);
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+     .main .info h1{
+        line-height: 1.8rem;
+        font-weight: bold;
+        font-size: 6vw;
+        width: 70%;
+        margin-bottom: 15px;
+    }
+    .main .info .flo{
+        font-size: 4vw ;
+        color: hsl(228, 12%, 48%);
+        line-height: 1.5rem;
+        margin-bottom: 15px;
+        
+    }
+    .main .info .flo{
+        width: 85%;
+    }
+    .main .info .green{
+        color: hsl(158, 36%, 37%);
+        font-weight: bold;
+        font-size: 7vw;
+        
+    }
+    .main .info .strike{
+        text-decoration: line-through;
+        font-size: 4vw;
+        color :hsl(228, 12%, 48%);
+        
+    }
+    .main .info .price{
+        margin-bottom: 15px;
+        text-align: left;
+        margin-left: 5px;
+    }
+    .main button{
+        background-color: hsl(158, 36%, 37%);
+        padding: 20px;
+        color:white;
+        border-radius: 10px;
+        border-color: transparent;
+        width: 75vw;
+        text-align: center;
+        justify-content: center;
+        height: 40px;
+    
+    }
+    .main button p{
+        font-size: 4vw;
+    }
+  }
+
+  @media screen and (max-width: 415px){
+    .main{
+        flex-direction: column;
+        width:85%;
+        background-color: hsl(0, 0%, 100%);
+        height: 500vh;
+        margin-top: 200px;
+    }
+    .main .ig .mob{
+        height: 40vh;
+        border-bottom-left-radius: 0px ;
+         border-top-right-radius: 10px; 
+    }
+    .main .info .perf{
+        letter-spacing: 5px;
+        font-size: 4vw;
+        color: hsl(228, 12%, 48%);
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+     .main .info h1{
+        line-height: 1.8rem;
+        font-weight: bold;
+        font-size: 6vw;
+        width: 70%;
+        margin-bottom: 15px;
+    }
+    .main .info .flo{
+        font-size: 4vw ;
+        color: hsl(228, 12%, 48%);
+        line-height: 1.5rem;
+        margin-bottom: 15px;
+        
+    }
+    .main .info .flo{
+        width: 85%;
+    }
+    .main .info .green{
+        color: hsl(158, 36%, 37%);
+        font-weight: bold;
+        font-size: 7vw;
+        
+    }
+    .main .info .strike{
+        text-decoration: line-through;
+        font-size: 4vw;
+        color :hsl(228, 12%, 48%);
+        
+    }
+    .main .info .price{
+        margin-bottom: 15px;
+        text-align: left;
+        margin-left: 5px;
+    }
+    .main button{
+        background-color: hsl(158, 36%, 37%);
+        padding: 20px;
+        color:white;
+        border-radius: 10px;
+        border-color: transparent;
+        width: 75vw;
+        text-align: center;
+        justify-content: center;
+        height: 40px;
+    
+    }
+    .main button p{
+        font-size: 4vw;
+    }
+  }
+
+  @media screen and (max-width: 391px){
+    .main{
+        flex-direction: column;
+        width:85%;
+        background-color: hsl(0, 0%, 100%);
+        height: 500vh;
+        margin-top: 200px;
+    }
+    .main .ig .mob{
+        height: 40vh;
+        border-bottom-left-radius: 0px ;
+         border-top-right-radius: 10px; 
+    }
+    .main .info .perf{
+        letter-spacing: 5px;
+        font-size: 4vw;
+        color: hsl(228, 12%, 48%);
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+     .main .info h1{
+        line-height: 1.8rem;
+        font-weight: bold;
+        font-size: 6vw;
+        width: 70%;
+        margin-bottom: 15px;
+    }
+    .main .info .flo{
+        font-size: 4vw ;
+        color: hsl(228, 12%, 48%);
+        line-height: 1.5rem;
+        margin-bottom: 15px;
+        
+    }
+    .main .info .flo{
+        width: 85%;
+    }
+    .main .info .green{
+        color: hsl(158, 36%, 37%);
+        font-weight: bold;
+        font-size: 7vw;
+        
+    }
+    .main .info .strike{
+        text-decoration: line-through;
+        font-size: 4vw;
+        color :hsl(228, 12%, 48%);
+        
+    }
+    .main .info .price{
+        margin-bottom: 15px;
+        text-align: left;
+        margin-left: 5px;
+    }
+    .main button{
+        background-color: hsl(158, 36%, 37%);
+        padding: 20px;
+        color:white;
+        border-radius: 10px;
+        border-color: transparent;
+        width: 75vw;
+        text-align: center;
+        justify-content: center;
+        height: 40px;
+    
+    }
+    .main button p{
+        font-size: 4vw;
+    }
+  }
+
+
+  
+
+ 
